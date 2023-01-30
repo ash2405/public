@@ -1,0 +1,62 @@
+@mixin content-with-h2 {
+  color: #000;
+  display: grid;
+  grid-template-columns: 25rem 1rem 18rem;
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 1.2rem;
+  h2::after {
+    content: '';
+    width: 4rem;
+    height: 6px;
+    color: rgb(240, 22, 240);
+    font-size: 3rem;
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    /* margin: 0 auto; */
+    background-color: rgb(250, 5, 5);
+    border: 1px solid rgb(250, 5, 5);
+    border-radius: 6px;
+  }
+  .btn {
+    background-color: #05254d;
+    height: 4rem;
+    width: 12rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.6rem;
+  }
+  .small-img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .big-img {
+    width: 243px;
+   
+  }
+}
+
+@mixin button {
+  .btn {
+    background-color: #05254d;
+    height: 4rem;
+    width: 12rem;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.6rem;
+    &:hover {
+      background-color: rgb(240, 41, 41);
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin p-tag {
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+}

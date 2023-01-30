@@ -1,0 +1,53 @@
+header {
+  text-align: center;
+  position: relative;
+  .header {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 8;
+    .nav-bar {
+      width: 80vw;
+      background-color: #ed242e;
+      display: grid;
+      grid-template-rows: 4rem;
+      grid-template-columns: repeat(7, 8rem);
+      div {
+        display: grid;
+        place-items: center;
+        color: #fff;
+        &:hover {
+            color: #000;
+            cursor: pointer;
+          font-weight: 900;
+        }
+      }
+    }
+    .filter {
+      width: 8rem;
+      display: grid;
+      place-items: center;
+    }
+  }
+  .covid-circle {
+    color: #000;
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    background-color: #ed242e;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+}
+    img {
+        position: absolute;
+        z-index: 10;
+        top: 23%;
+        left: 45%;
+        width: 5%;
+        transform: translate(48%, 56%);
+    }
+   
+}
