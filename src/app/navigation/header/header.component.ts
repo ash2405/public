@@ -8,7 +8,5 @@ import { environment } from 'src/environment/environment'
 })
 export class HeaderComponent implements OnInit {
   appConstant: any
-  ngOnInit(): void {
-    this.appConstant = environment
-  }
+  ngOnInit(): void { this.appConstant = environment}
 }
